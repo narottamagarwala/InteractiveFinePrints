@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Narottam Agarwala</title>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <style>
+  @import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+body{background:url(images/giftly.png) repeat; margin:0px; font-family: 'Happy Monkey', cursive;}
+.logo_area{width:1000px; height:auto;    margin:0 auto;  margin-top:40px; border:0; }
+.main_wrapper{width:980px; height:auto;  padding:10px;  margin:0 auto; background-color: rgba(255,255,255,0.8); margin-top:40px;
+  border: 1px solid #fc8e12;
+    border-radius:10px;
+
+}
+ #effect1, #effect2, #effect3, #effect4 {width:960px; height:auto; padding:10px; min-height:200px; background-color: rgba(255,255,255,0.8); margin:0 auto; font-family: 'Happy Monkey', cursive; font-size:28px; line-height:34px;}
+#effect0 {width:960px; height:auto; padding:10px; min-height:300px; background-color: rgba(255,255,255,0.8); margin:0 auto; font-family: 'Happy Monkey', cursive; font-size:28px; line-height:34px;}
+ .agree_button{width:104px; height:40px; background:url(images/agree_btn.png); color:#000; text-decoration:none; font-size:16px; text-align:center; line-height:40px; border:none; cursor:pointer; margin-left:428px; margin-bottom:15px;}
+.agree_button a{text-decoration:none; color:#ffffff;}
+ .download_button{width:104px; height:40px; background:url(images/download.png); color:#000; text-decoration:none; font-size:16px; text-align:center; line-height:40px; border:none; cursor:pointer; margin-bottom:15px;}
+.download_button a{text-decoration:none; color:#ffffff;}
+/*.agree_button:hover{text-decoration:none; color:#ffffff; background:#333;}*/
+.clear{clear:both;}
+.div_border{width:100% !important; height:1px !important; border-bottom:1px solid #FFFFFF; margin:10px 0 25px 0;}
+.head{width:300px; height:40px; background:url(images/smile.png) no-repeat left center; line-height:34px; text-align:left; font-size:18px; padding:0 0 0 40px; margin-bottom:15px; }
+.head2{width:300px; height:auto; line-height:34px; text-align:left; font-size:18px; float:left;  }
+.head2_right{width:640px; height:auto; float:left; text-align:justify; padding:0 10px; font-size:18px; line-height:26px;}
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/clippy.css" media="all">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+ <div class="logo_area">
+ <a href="#" onclick="location.reload();" style="text-decoration:none;" >
+ <img src="images/logo.png"></a></div>
+<div class="main_wrapper">
+<div id="head1" class="head">Introduction</div>
+<div id="head2" class="head" style="display:none;">Terms & Conditions</div>
+<div id="head3" class="head" style="display:none;">Thank You</div>
+
+
+
+ <div id="effect0" > 
+<div id="img0" class="head2"><img src="images/intro_pic.png"></div>
+<div  class="head2_right">
+
+
+We will demonstrate interactive method of displaying fine prints so that one reads it.<br><br>
+Lets assume this to be an image download website, where we need to agree to the terms and conditions before downloading an image. <br><br>
+
+Click the download button. <br>(Nothing will download, its just a simulation)
+
+
+
+
+<div class="div_border"></div>
+<div class="clear"></div>
+
+<button id="step0" class="download_button" onmouseover="clickToContinue();">&nbsp;</button> &nbsp; <span style="font-size:12px;"> Agree to Terms & conditions in next step </span>
+
+
+
+</div>
+ </div> 
+
+
+
+<div id="effect1" style="display:none;">
+<p>
+You are <Strong>allowed</Strong> to:
+<OL>
+<li><strong>Modify</strong> the image for personal use.</li>
+<li>Use it in <strong>academic</strong> projects.</li>
+<li>Use it on <strong>non-commercial</strong> website.</li>
+<li>Use them with your <strong>own liability</strong>.</li>
+</OL>
+    
+</p>
+
+<div class="div_border"></div>
+<div class="clear"></div>
+
+<button id="step1" class="agree_button"  alt="Read the terms before you click" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 1 of 3 </span>
+
+
+
+</div>
+
+<div id="effect2" style="display:none;">
+<p>
+You are <strong>NOT</strong> allowed to :
+<ol>
+<li><strong>Remove</strong> the <strong>watermark</strong></li>
+<li><strong>Sell</strong> the image</li>
+<li>Use the image <strong>commercially</strong></li>
+<li><strong>Display</strong> the image in <strong>image gallery</strong></li>
+<li><strong>Print</strong> the image</li>
+</ol>
+</p>
+
+<div class="div_border"></div>
+<div class="clear"></div>
+
+<button id="step2" class="agree_button" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 2 of 3 </span>
+
+
+
+</div>
+
+
+<div id="effect3" style="display:none;"><p>
+<ul>
+<li>We do not capture your data</li>
+<li>We do not use cookies</li>
+<li>Email us if you have any complaint or question</li>
+<li>All disputes are subject to Indian Laws</li>
+
+</ul>
+</p>
+<div class="div_border"></div>
+<div class="clear"></div>
+<button id="step3" class="agree_button" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 3 of 3 </span>
+</div>
+
+
+
+
+
+<div id="effect4" style="background:url(images/thanks.png) no-repeat right center #ffffff; display:none;"><p>Thankyou for Agreeing to our Terms & Conditions. 
+</p>
+
+
+<div class="clear"></div>
+
+
+
+<p><a href="images/brownie.png" style="font-size:14px; text-align:left; font-size:14px; color:#000; text-decoration:none;" target="_blank">Here is your image</a></p>
+
+<div class="div_border"></div>
+<div class="clear"></div>
+
+
+</div>
+
+
+
+
+<div class="clear"></div>
+<script type="text/javascript" src="js/clippy.js"></script>
+
+        <script type="text/javascript">
+            var agentGlobal;
+            clippy.load('Merlin', function(agent) {
+                agentGlobal = agent;
+                agentGlobal.show();
+               // agentGlobal.moveTo(800,400);
+               
+            });   
+        </script>
+</div>
+ 
+ 
+  <div class="logo_area">
+ <div class="div_border" style="border-color:#fc8e12 !important;"></div>
+ <p style="text-align:center; font-size:12px; line-height:40px; color:#000;"> Best Viewed in Chrome <br>Narottam Agarwala. All Rights Reserved. Terms & Conditions Apply.</p>
+ </div>
+ 
+<script type="text/javascript">
+var downloadclicked =0;
+function clickToContinue() {
+  if(downloadclicked == 0) {
+  agentGlobal.speak('click download to continue');
+  downloadclicked =1;
+}
+}
+var agreed1=0;
+
+var agreed2=0;
+
+var agreed3=0;
+
+$( "#step0" ).click(function() {
+$( "#head1" ).hide();
+$( "#head2" ).show();
+$( "#head3" ).hide();
+$( "#img0"  ).hide();
+
+
+$( "#effect0" ).hide();
+$( "#effect1" ).show();
+$( "#effect2" ).hide();
+$( "#effect3" ).hide();
+$( "#effect4" ).hide();
+
+agentGlobal.stop();
+//agentGlobal.play('Congratulate');
+if ('speechSynthesis' in window) {
+
+agentGlobal.stop();
+
+var utterance = new SpeechSynthesisUtterance('You are allowed to');
+utterance.onstart = function(e) { 
+  agentGlobal.speak("You are allowed to");
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Modify the image for personal use');
+utterance.onstart = function(f) { 
+  agentGlobal.speak("Modify the image for personal use"); 
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Use it in academic projects.');
+utterance.onstart = function(g) { agentGlobal.speak("Use it in academic projects.  "); }
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Use it on non-commercial website');
+utterance.onstart = function(h) { agentGlobal.speak("Use it on non-commercial website"); }
+window.speechSynthesis.speak(utterance);
+
+
+
+var utterance = new SpeechSynthesisUtterance('Use them with your own liability');
+utterance.onstart = function(c) { agentGlobal.speak("Use them with your own liability"); }
+utterance.onend = function(c) { agreed1=1; }
+window.speechSynthesis.speak(utterance);
+
+
+
+
+}
+else
+{
+  agentGlobal.speak("You are allowed to");
+  agentGlobal.speak("Modify the image for personal use "); 
+  agentGlobal.speak("Use it in academic projects.  ");
+  agentGlobal.speak("Use it on non-commercial website");
+  agentGlobal.speak("Use them with your own liability");
+  //agreed1=1;
+ 
+
+
+
+}
+setTimeout(function(){ agreed1=1; }, 10000);
+
+});
+</script>
+
+<script type="text/javascript">
+$( "#step1" ).click(function() {
+  if(agreed1 == 0) { alert('Read before you agree'); agreed1=1; }
+  else {
+$( "#effect0" ).hide();
+$( "#effect1" ).hide( "explode" );
+$( "#effect2" ).show();
+$( "#effect3" ).hide();
+$( "#effect4" ).hide();
+
+//agentGlobal.animate();
+
+if ('speechSynthesis' in window) {
+
+agentGlobal.stop();
+
+var utterance = new SpeechSynthesisUtterance('You are not allowed to');
+utterance.onstart = function(e) { 
+  agentGlobal.speak("You are not allowed to");
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Remove the watermark');
+utterance.onstart = function(f) { 
+  agentGlobal.speak("Remove the watermark"); 
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Sell the image');
+utterance.onstart = function(g) { agentGlobal.speak("Sell the image. "); }
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Use the image commercially');
+utterance.onstart = function(h) { agentGlobal.speak("Use  the  image  commercially. "); }
+window.speechSynthesis.speak(utterance);
+
+
+
+var utterance = new SpeechSynthesisUtterance('Display the image in image gallery');
+utterance.onstart = function(c) { agentGlobal.speak("Display the image in image gallery"); }
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Print the image');
+utterance.onstart = function(d) { agentGlobal.speak("Print the image"); }
+utterance.onend = function(c) { agreed2=1; }
+window.speechSynthesis.speak(utterance);
+
+}
+else
+{
+  agentGlobal.speak("You are not allowed to");
+  agentGlobal.speak("Remove the watermark"); 
+  agentGlobal.speak("Sell the image. ");
+  agentGlobal.speak("Use  the  image  commercially. ");
+  agentGlobal.speak("Display the image in image gallery");
+  agentGlobal.speak("Print the image");
+  //agreed2 =1;
+
+
+
+}
+}
+//agentGlobal.play('Congratulate');
+setTimeout(function(){ agreed2=1; }, 8000);
+
+});
+</script>
+ 
+ <script type="text/javascript">
+$( "#step2" ).click(function() {
+  if(agreed2 == 0) { alert('Read before you agree'); agreed2=1; }
+  else {
+$( "#effect0" ).hide();
+$( "#effect1" ).hide();
+$( "#effect2" ).hide( "puff" );
+$( "#effect3" ).show();
+$( "#effect4" ).hide();
+
+/*
+agentGlobal.stop()
+agentGlobal.moveTo(100,100);
+agentGlobal.play('GetAttention');
+agentGlobal.play('GetAttentionContinued');
+agentGlobal.play('GetAttentionContinued');
+agentGlobal.play('GetAttentionReturn');
+agentGlobal.speak('Read the Terms & Conditions');
+*/
+
+if ('speechSynthesis' in window) {
+
+agentGlobal.stop();
+
+var utterance = new SpeechSynthesisUtterance('We do not capture your data');
+utterance.onstart = function(e) { 
+  agentGlobal.speak("We do not capture your data.");
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('We do not use cookies');
+utterance.onstart = function(f) { 
+  agentGlobal.speak("We do not use cookies"); 
+}
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('Email us if you have any complaint or question');
+utterance.onstart = function(g) { agentGlobal.speak("Email us if you have any complaint or question"); }
+window.speechSynthesis.speak(utterance);
+
+
+var utterance = new SpeechSynthesisUtterance('All disputes are subject to Indian Laws');
+utterance.onstart = function(h) { agentGlobal.speak("All disputes are subject to Indian Laws"); }
+utterance.onend = function(c) { agreed3=1; }
+window.speechSynthesis.speak(utterance);
+
+
+
+}
+else
+{
+  agentGlobal.stop();
+  agentGlobal.speak("We do not capture your data.");
+  agentGlobal.speak("We do not use cookies"); 
+  agentGlobal.speak("Email us if you have any complaint or question");
+  agentGlobal.speak("All disputes are subject to Indian Laws");
+//agreed3 =1;
+
+
+
+}
+}
+setTimeout(function(){ agreed3=1; }, 5000);
+});
+</script>
+ 
+ <script type="text/javascript">
+$( "#step3" ).click(function() {
+  if(agreed3 == 0) { alert('Read before you agree'); agreed3=1; }
+  else {
+$( "#head1" ).hide();
+$( "#head2" ).hide();
+$( "#head3" ).show();
+
+$( "#effect1" ).hide();
+$( "#effect2" ).hide();
+$( "#effect3" ).hide( "slide" ); // scale, pulsate, clip, blink, puff, size, blind, fold
+$( "#effect4" ).show();
+
+agentGlobal.play('Congratulate');
+agentGlobal.play('Processing');
+agentGlobal.play('Congratulate');
+agentGlobal.play('Searching');
+agentGlobal.play('Writing');
+agentGlobal.play('Wave');
+agentGlobal.speak("Bye Bye");
+agentGlobal.play('Hide');
+agentGlobal.play('Suggest');
+agentGlobal.speak('See you soon');
+
+
+
+
+}
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>
