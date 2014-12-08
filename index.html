@@ -15,7 +15,7 @@ body{background:url(images/giftly.png) repeat; margin:0px; font-family: 'Happy M
 }
  #effect1, #effect2, #effect3, #effect4 {width:960px; height:auto; padding:10px; min-height:200px; background-color: rgba(255,255,255,0.8); margin:0 auto; font-family: 'Happy Monkey', cursive; font-size:28px; line-height:34px;}
 #effect0 {width:960px; height:auto; padding:10px; min-height:300px; background-color: rgba(255,255,255,0.8); margin:0 auto; font-family: 'Happy Monkey', cursive; font-size:28px; line-height:34px;}
- .agree_button{width:104px; height:40px; background:url(images/agree_btn.png); color:#000; text-decoration:none; font-size:16px; text-align:center; line-height:40px; border:none; cursor:pointer; margin-left:428px; margin-bottom:15px;}
+ .agree_button{width:104px; height:40px; background:url(images/agree_btn.png); color:#000; text-decoration:none; font-size:16px; text-align:center; line-height:40px; border:none !important; cursor:pointer; margin-left:428px; margin-bottom:15px;}
 .agree_button a{text-decoration:none; color:#ffffff;}
  .download_button{width:104px; height:40px; background:url(images/download.png); color:#000; text-decoration:none; font-size:16px; text-align:center; line-height:40px; border:none; cursor:pointer; margin-bottom:15px;}
 .download_button a{text-decoration:none; color:#ffffff;}
@@ -33,7 +33,7 @@ body{background:url(images/giftly.png) repeat; margin:0px; font-family: 'Happy M
 </head>
 <body>
  <div class="logo_area">
- <a href="#" onclick="location.reload();" style="text-decoration:none;" >
+ <a href="#" onclick="location.reload();" style="text-decoration:none; border:none;" >
  <img src="images/logo.png"></a></div>
 <div class="main_wrapper">
 <div id="head1" class="head">Introduction</div>
@@ -58,7 +58,7 @@ Click the download button. <br>(Nothing will download, its just a simulation)
 <div class="div_border"></div>
 <div class="clear"></div>
 
-<button id="step0" class="download_button" onmouseover="clickToContinue();">&nbsp;</button> &nbsp; <span style="font-size:12px;"> Agree to Terms & conditions in next step </span>
+<button id="step0" class="download_button" onmouseover="clickToContinue();" title="Click to continue">&nbsp;</button> &nbsp; <span style="font-size:12px;"> Agree to Terms & conditions in next step </span>
 
 
 
@@ -67,8 +67,8 @@ Click the download button. <br>(Nothing will download, its just a simulation)
 
 
 
-<div id="effect1" style="display:none;">
-<p>
+<div id="effect1" style="display:none; background:url(images/agree.png) no-repeat right 100px center #ffffff;">
+
 You are <Strong>allowed</Strong> to:
 <OL>
 <li><strong>Modify</strong> the image for personal use.</li>
@@ -77,19 +77,19 @@ You are <Strong>allowed</Strong> to:
 <li>Use them with your <strong>own liability</strong>.</li>
 </OL>
     
-</p>
 
-<div class="div_border"></div>
+
+
 <div class="clear"></div>
 
-<button id="step1" class="agree_button"  alt="Read the terms before you click" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 1 of 3 </span>
+<button id="step1" class="agree_button"  title="Read the terms before you click" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 1 of 3 </span>
 
 
 
 </div>
 
-<div id="effect2" style="display:none;">
-<p>
+<div id="effect2" style="display:none; background:url(images/notallow.png) no-repeat right 100px center #ffffff;">
+
 You are <strong>NOT</strong> allowed to :
 <ol>
 <li><strong>Remove</strong> the <strong>watermark</strong></li>
@@ -98,19 +98,19 @@ You are <strong>NOT</strong> allowed to :
 <li><strong>Display</strong> the image in <strong>image gallery</strong></li>
 <li><strong>Print</strong> the image</li>
 </ol>
-</p>
 
-<div class="div_border"></div>
+
+
 <div class="clear"></div>
 
-<button id="step2" class="agree_button" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 2 of 3 </span>
+<button id="step2" class="agree_button" title="Read the terms before you click">&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 2 of 3 </span>
 
 
 
 </div>
 
 
-<div id="effect3" style="display:none;"><p>
+<div id="effect3" style="display:none; background:url(images/terms.png) no-repeat right 100px center #ffffff;">
 <ul>
 <li>We do not capture your data</li>
 <li>We do not use cookies</li>
@@ -118,10 +118,10 @@ You are <strong>NOT</strong> allowed to :
 <li>All disputes are subject to Indian Laws</li>
 
 </ul>
-</p>
-<div class="div_border"></div>
+
+
 <div class="clear"></div>
-<button id="step3" class="agree_button" >&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 3 of 3 </span>
+<button id="step3" class="agree_button" title="Read the terms before you click">&nbsp;</button>&nbsp;<span style="font-size:12px;"> Step 3 of 3 </span>
 </div>
 
 
@@ -138,7 +138,6 @@ You are <strong>NOT</strong> allowed to :
 
 <p><a href="images/brownie.png" style="font-size:14px; text-align:left; font-size:14px; color:#000; text-decoration:none;" target="_blank">Here is your image</a></p>
 
-<div class="div_border"></div>
 <div class="clear"></div>
 
 
@@ -164,7 +163,7 @@ You are <strong>NOT</strong> allowed to :
  
   <div class="logo_area">
  <div class="div_border" style="border-color:#fc8e12 !important;"></div>
- <p style="text-align:center; font-size:12px; line-height:40px; color:#000;"> Best Viewed in Chrome <br>Narottam Agarwala. All Rights Reserved. Terms & Conditions Apply.</p>
+ <p style="text-align:center; font-size:12px; line-height:40px; color:#000;"> <img src="images/chrome.png" align="absmiddle" style="margin:0 5px 0 0;">Best Viewed in Chrome <br>Narottam Agarwala. All Rights Reserved. Terms & Conditions Apply.</p>
  </div>
  
 <script type="text/javascript">
