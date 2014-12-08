@@ -9,7 +9,7 @@ The fonts are clear and big. No more struggling to read.
 
 The button is interactive and tries to warn you if you have not read the page.
 
-The Speech Synthesis will speak out the pine prints.
+The Speech Synthesis will speak out the fine prints.
 
 The interactive character makes it lively. Double click him to see him animate.
 
